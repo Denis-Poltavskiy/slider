@@ -3,8 +3,9 @@ var width=window.innerWidth;
 var slide=[];
 var button=document.querySelector('.button__show')
 slide=document.querySelectorAll('.swiper-slide');
-
-
+var button_transform=document.querySelector('.button__img');
+var button__p=document.querySelector('.button__p');
+button__p.textContent='Показать';
 if (width<=767) {
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -51,11 +52,15 @@ var none_block=1;
                  slide[i].style.display = 'flex';
 
              }
+             button_transform.classList.add('button_transform');
+             button__p.textContent='Скрыть';
              none_block = none_block - 1;
          } else {
              for (var i = 6; i < slide.length; i++) {
                  slide[i].style.display = 'none';
              }
+             button_transform.classList.remove('button_transform');
+             button__p.textContent='Показать';
              none_block = none_block + 1;
          }
      } else{
@@ -64,11 +69,15 @@ var none_block=1;
                  slide[i].style.display = 'flex';
 
              }
+             button_transform.classList.add('button_transform');
+             button__p.textContent='Скрыть';
              none_block = none_block - 1;
          } else {
              for (var i = 8; i < slide.length; i++) {
                  slide[i].style.display = 'none';
              }
+             button_transform.classList.remove('button_transform');
+             button__p.textContent='Показать';
              none_block = none_block + 1;
          }
 

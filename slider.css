@@ -49,7 +49,11 @@ body{
 .button{
     display: none;
 }
-
+.swiper-slide__go{
+    border: none;
+    outline: none;
+    background: none;
+}
 @media screen and (min-width:768px) {
     .swiper-wrapper{
         flex-wrap: wrap;
@@ -65,27 +69,28 @@ body{
         width: 145px;
         height: 34px;
     }
-    .button__p::before{
-        content: url("image/expand.svg");
+    .button__show img{
+
         position:relative;
         background-repeat: no-repeat;
-        top:5px;
+        top:-5px;
         left: -5px;
     }
-    .button__show{
+    .button__show {
+        display: flex;
         border: none;
         outline: none;
         background: none;
     }
-    .button__show:active{
+    .button_transform{
         transform: rotate(180deg);
-
     }
     .button__p{
         font-size: 16px;
         font-weight: 600;
         margin: 0;
     }
+
 }
 @media screen and (min-width:1120px) {
     .swiper-wrapper .swiper-slide {

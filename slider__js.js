@@ -83,3 +83,8 @@ var none_block=1;
 
      }
  })
+
+ window.addEventListener('resize', function () {
+    "use strict";
+     window.location.reload();
+ });

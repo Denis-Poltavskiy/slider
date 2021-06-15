@@ -21,7 +21,7 @@ body{
     margin-bottom: 32px;
     background: linear-gradient( to right,#F8F8F8 ,white);
 }
-.header .header__heading h1{
+.header .header__title h1{
     margin-top: 0;
     font-size: 16px;
     color: #7E7E82;
@@ -46,6 +46,14 @@ body{
 .swiper-wrapper:first-child{
     margin-left: 10px;
 }
+.swiper-pagination-bullet{
+    width: 12px !important;
+    height: 12px !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #7E7E82 !important;
+}
+
 .button{
     display: none;
 }
